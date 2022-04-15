@@ -1,0 +1,40 @@
+body {
+    background-image: url("img/1.jpg.jpg");
+}
+
+#form1 {
+    width: 400px;
+    margin: auto;
+    padding: 10px 40px;
+    background: whitesmoke;
+    border: 1px solid black;
+}
+
+#form1 .txt {
+    width: 400px;
+    padding: 6px;
+    border: 1px solid lightslategrey;
+}
+
+#form fieldset {
+    border: 1px solid lightslategrey;
+    margin-top: 0;
+}
+
+#form1 #nut {
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: royalblue;
+    color: white;
+    margin-left: 15%;
+}
+
+#form1 #baoloi {
+    margin: 0px auto;
+    color: red;
+}
+
+h2 {
+    text-align: center;
+}

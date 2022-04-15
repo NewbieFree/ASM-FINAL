@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    pading: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container header {
+    background-image: url('images/poly-header.jpg');
+    height: 220px;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.container nav {
+    height: 40px;
+    line-height: 45px;
+    background-color: orangered;
+    margin: 5px 0;
+}
+
+.container article {
+    min-height: 45px;
+    float: right;
+    line-height: 45px;
+    background: darkkhaki;
+}
+
+.container aside {
+    min-height: 400px;
+    width: 24%;
+    background-color: lightgray;
+    float: left;
+}
+
+.container footer {
+    border-top: 5px double orangered;
+    line-height: 50px;
+    background-color: lightcyan;
+    clear: both;
+}
+
+nav ul {
+    margin: auto;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: rgb(206, 230, 174);
+    font-variant: small-caps;
+    font-size: larger;
+    pading: 0 10px;
+    line-height: 20px;
+}
+
+nav ul ul {
+    position: absolute;
+    display: none;
+}
+
+nav>ul>li:hover>ul {
+    display: block;
+    width: 180px;
+    list-style: none;
+    border-radius: 3px;
+    box-shadow: 0 0 1px gray;
+    background-color: rgb(225, 174, 107);
+    text-align: left;
+}
+
+nav>ul>li:hover>ul a {
+    color: orangered;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-size: larger;
+    padding: 5px 0 5px 10px;
+}
+
+.container nav ul li a:hover {
+    color: rgba(227, 235, 217, 0.719);
+}

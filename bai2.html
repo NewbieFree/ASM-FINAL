@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="slideshow.css">
+</head>
+
+<body>
+    <div id="slide">
+        <h2>Album Ảnh 4K </h2>
+        <img id="hinh" src="img/0.jpg" alt="">
+        <div class="dieuhuong">
+            <i class='bx bx-chevrons-right' onclick="next()"></i>
+            <i class='bx bx-chevrons-left' onclick="prev()" class="left"></i>
+        </div>
+        <p id="dem">0/7</p>
+    </div>
+</body>
+
+</html>
+<script>
+    var arr_hinh = [
+        "img/0.jpg",
+        "img/1.jpg.jpg",
+        "img/2.jpg.jpg",
+        "img/3.jpg",
+        "img/4.jpg",
+        "img/5.jpg.jpg",
+        "img/7.jpg",
+        "img/9.jpg",
+    ]
+</script>
+<script>
+    var index = 0;
+
+    function next() {
+        index++;
+        if (index >= arr_hinh.length) index = 0;
+
+        var hinh = document.getElementById("hinh");
+        hinh.src = arr_hinh[index];
+        document.getElementById("dem").innerHTML = index + "/" + arr_hinh.length;
+    }
+
+    function prev() {
+        index--;
+        if (index < 0) index = arr_hinh.length - 1;
+
+        var hinh = document.getElementById("hinh");
+        hinh.src = arr_hinh[index];
+        document.getElementById("dem").innerHTML = index + "/" + arr_hinh.length;
+    }
+</script>
